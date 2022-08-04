@@ -28,7 +28,13 @@ def devm():
   print("Welcome to the dev menu")
   print("Here you can set your health to pretty much anything")
   print("or just leave this menu")
-  
+
+def mainroad():
+  print("you have encountered a 2 way cross road")
+  input(C)
+  print("N to go north of starting village")
+  print("S to go south of the starting village")
+  print("R to return to village")
  #if Menu == "M":
    #print("Menu")
   
@@ -70,12 +76,13 @@ print("Health:" + HEALTH)
 input(C)
 
   # first possible adventure
-print("you have encountered a 2 way cross road")
-input(C)
-print("N to go north of starting village") 
-print("R to return to village")
+mainroad()
 NS = input()
-print("You have chosen to go South")
+if NS == "N":
+  print("you have gone North of the village")
+if NS == "S":
+  print("you have gone south of the village")
+
 
 print("you are in the village square")
 print("Where would you like to go?")
