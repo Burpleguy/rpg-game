@@ -11,3 +11,4 @@ print("A=Start your adventure")
 OPTION = input()
 if OPTION == "A":
   print("A")
+
